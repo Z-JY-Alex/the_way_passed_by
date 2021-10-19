@@ -4,13 +4,13 @@
 
 #####  1、查看基本信息
 
-#uname -vr![image-20211012101746294](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012101746294.png)
+#uname -vr![image-20211012101746294](images\image-20211012101746294.png)
 
 2、查看硬件信息
 
 #lspci | grep -i nvidia
 
-![image-20211012101727262](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012101727262.png)
+![image-20211012101727262](images\image-20211012101727262.png)
 
 看不出来显卡型号的可以Google一下。
 
@@ -43,7 +43,7 @@ rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 
 #nvidia-detect
 
-![image-20211012101607159](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012101607159.png)
+![image-20211012101607159](images\image-20211012101607159.png)
 
 ##### 7、安装驱动
 
@@ -56,7 +56,7 @@ rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 #reboot
 重启之后，使用#nvidia-smi指令即可查看。
 
-![image-20211012101941144](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012101941144.png)
+![image-20211012101941144](images\image-20211012101941144.png)
 
 
 
@@ -72,7 +72,7 @@ rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 
 https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=CentOS&target_version=7&target_type=runfile_local（也可以百度）
 
-![image-20211012102738035](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012102738035.png)
+![image-20211012102738035](images\image-20211012102738035.png)
 
 建议选择.run文件。（我在rpm安装过程中报错，显示安装包冲突）
 
@@ -82,7 +82,7 @@ https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&D
 
 ###### 注意：安装过程冲取消Driver安装，不然会和之前安装的驱动冲突
 
-![image-20211012103052944](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012103052944.png)
+![image-20211012103052944](images\image-20211012103052944.png)
 
 ##### 3、安装完成后配置环境变量
 
@@ -100,7 +100,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 #nvcc -V
 
-![image-20211012103502756](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211012103502756.png)
+![image-20211012103502756](images\image-20211012103502756.png)
 
 
 
