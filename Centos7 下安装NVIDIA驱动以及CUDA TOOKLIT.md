@@ -5,7 +5,7 @@
 #####  1、查看基本信息
 
 #uname -vr
-![image-20211012101746294](https://raw.githubusercontent.com/Z-JY-Alex/the_way_passed_by/master/images\image-20211012101746294.png)
+![image-20211012101746294](https://raw.githubusercontent.com/Z-JY-Alex/the_way_passed_by/master/images/image-20211012101746294.png)
 
 2、查看硬件信息
 
